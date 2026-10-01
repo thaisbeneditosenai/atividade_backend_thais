@@ -31,7 +31,7 @@
             <th>Ações</th>
         </tr>
 
-        //fetch_assoc traz todos os dados associados
+        
         <?php while ($ordem = $resultado->fetch_assoc()){ ?>
             <tr>
                 <td><?php echo $ordem["id"]; ?></td>
