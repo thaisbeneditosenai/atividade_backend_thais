@@ -24,7 +24,7 @@
             <input type="date" name="data_entrada" required>
 
             <label>STATUS</label>
-            <select name="STATUS">
+            <select name="status" required>
                 <option value="Recebido">Recebido</option>
                 <option value="Em análise">Em análise</option>
                 <option value="Em manutenção">Em manutenção</option>

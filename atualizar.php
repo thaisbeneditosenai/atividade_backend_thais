@@ -1,18 +1,18 @@
 <?php
     include "config/conexao.php";
 
-    $id = intval($_post["id"]);
-    $cliente = $_post["cliente"];
-    $equipamento = $_post["equipamento"];
-    $problema = $_post["problema"];
-    $data_entrada = $_post["data_entrada"];
-    $STATUS = $_post["STATUS"];
+    $id = intval($_POST["id"]);
+    $cliente = $_POST["cliente"];
+    $equipamento = $_POST["equipamento"];
+    $problema = $_POST["problema"];
+    $data_entrada = $_POST["data_entrada"];
+    $STATUS = $_POST["STATUS"] ;
 
     $sql = "UPDATE ordens_servico
-        set cliente = ?
-            equipamento = ?
-            problema = ?
-            data_entrada = ?
+        SET cliente = ?,
+            equipamento = ?,
+            problema = ?,
+            data_entrada = ?,
             STATUS = ?
         where id = ?";
 
